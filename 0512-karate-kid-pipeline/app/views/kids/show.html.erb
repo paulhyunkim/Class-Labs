@@ -1,0 +1,13 @@
+
+<div class="main">
+	<div class="photo"><img src="/assets/<%=@kid.first_name%>.jpg"></div>
+	<div class="text">
+	<h1><%= @kid.first_name %> <%= @kid.last_name %></h1>
+	<ul>
+		<li><strong>Birthday:</strong> <%= @kid.birthday %></li>
+		<li><strong>Belt:</strong> <%= @kid.belt_color %></li>
+		<li><strong>Dojo:</strong> <%= @kid.dojo %></li>
+		<li><strong>Signature Move:</strong> <%= @kid.signature_move %></li>
+	</ul>
+	</div>
+</div>

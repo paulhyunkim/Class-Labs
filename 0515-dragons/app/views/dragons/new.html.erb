@@ -1,0 +1,16 @@
+<h1> Hatch a new dragon! </h1>
+
+<%= form_for @dragon do |f| %>
+	<%= f.label :name %>
+	<%= f.text_field :name %>
+	<%= f.label :size %>
+  <%= f.text_field :size %>
+  <%= f.label :color %>
+  <%= f.text_field :color %>
+  <%= f.label :age %>
+  <%= f.text_field :age %>
+  <%= f.label :if_firebreathing %>
+  <%= f.check_box :is_firebreathing %>
+	<%= f.submit %>
+<% end %>
+

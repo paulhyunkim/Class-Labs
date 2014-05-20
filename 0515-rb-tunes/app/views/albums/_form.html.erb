@@ -1,0 +1,21 @@
+<%= form_for @album, class: "form-horizontal" do |f| %>
+	<div class="form-group">
+		<label for="album-name" class='col-sm-2 control-label'>Album</label>
+		<div class="col-sm-10">
+			<%= f.text_field :name, class: "form-control", id: "album-name" %>
+		</div>
+		<label for="album-platinum" class='col-sm-2 control-label'>Platinum?</label>
+		<div class="col-sm-10">
+			<%= f.check_box :platinum, class: "form-control", id: "album-platinum" %>
+		</div>
+		<label for="album-artist" class='col-sm-2 control-label'>Artist</label>
+		<div class="col-sm-10">
+			<%= f.collection_select :artist_id, @artists, :id, :name, {}, { class: "form-control", id: "album-artist" } %>
+		</div>
+	</div>
+	<div class="form-group">
+		<div class="col-sm-offset-2 col-sm-10">
+			<%= f.submit "Submit", class: "btn btn-info" %>	
+		</div>
+	</div>
+<% end %>

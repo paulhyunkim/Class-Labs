@@ -1,0 +1,13 @@
+<div class="main">
+	<div class="image"></div>
+	<div class="text">
+		<h1>Karate Kids</h1>
+
+			<ul>
+				<% @kids.each do |k| %>
+				<li><%= link_to k.first_name, kid_path(k) %></li>
+				<% end %>
+			</ul>
+			<%= link_to "See Upcoming Tournaments", karates_path %>
+	</div>
+</div>

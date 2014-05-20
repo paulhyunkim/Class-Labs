@@ -1,0 +1,8 @@
+<h1>These are Beers</h1>
+
+<% @beers.each do |b| %>
+	<p>I'm drinking <%= b.name %> by <%= b.brewer %> <%= link_to "Details", b %></p>
+
+<% end %>
+
+<%= link_to "Create a new beer", beers_new_path %>

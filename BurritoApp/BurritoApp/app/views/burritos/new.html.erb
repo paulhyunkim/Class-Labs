@@ -1,0 +1,19 @@
+<h1>Add burrito to order!</h1>
+
+<%= form_for(@burrito) do |b| %>
+
+	Rice: <%= b.check_box :rice %>
+	Beans: <%= b.check_box :beans %>
+	Meat: <%= b.text_field :meat %>
+	Extras: <%= b.text_field :extras %>
+	<%= b.hidden_field :order_id %>
+
+
+	<%= b.submit "Add burrito" %>
+
+<%end%>
+
+
+
+
+<%= link_to "Go back to the order list!", orders_path %>

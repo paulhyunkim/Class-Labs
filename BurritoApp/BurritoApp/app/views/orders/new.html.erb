@@ -1,0 +1,15 @@
+<h1>Make a new Order!</h1>
+
+<%= form_for(@order) do |o| %>
+
+	Name: <%= o.text_field :name %>
+	Time: <%= o.text_field :time %>
+
+	<%= o.submit "Add a new Order!" %>
+
+<%end%>
+
+
+
+
+<%= link_to "Go back to the order list!", orders_path %>

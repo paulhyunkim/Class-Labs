@@ -1,0 +1,14 @@
+<h1>Burritos#show</h1>
+<p>Find me in app/views/burritos/show.html.erb</p>
+
+The ingredients in <%= @burrito.name %>'s burrito are:
+
+<ul>
+<% @burrito.ingredients.each do |i| %>
+	
+		<li><%= i.name %></li>
+	
+	<% end %>
+</ul>
+
+<%= link_to "Edit this great burrito", edit_burrito_path %>

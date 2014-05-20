@@ -1,0 +1,10 @@
+<div class="email-form">
+	
+	<%= form_for :email, {:url => '/emails/emailform'} do |e| %>
+		<%= e.text_field :name, placeholder: "Name", class: "form-control" %>
+		<%= e.text_field :address, placeholder: "Email Address", class: "form-control" %>
+		<%= e.submit "Get an owl from Hogwarts!", class: "btn" %>
+	<% end %>
+
+
+</div>

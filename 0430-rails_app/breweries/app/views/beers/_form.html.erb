@@ -1,0 +1,10 @@
+<%= form_for(@beer) do |f| %>
+
+	Name: <%= f.text_field :name %>
+	Type: <%= f.text_field :type %>
+	Brewer: <%= f.text_field :brewer %>
+	ABV: <%= f.text_field :abv %> 
+
+	<%= f.submit "Add a new beer!" %>
+
+<%end%>

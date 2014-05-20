@@ -1,0 +1,14 @@
+<h1>Orders</h1>
+
+<% @orders.each do |o| %>
+	<p> <%= o.name %> ordered on <%= o.time %>. </p>
+
+	<div><%= link_to 'Show', o %></div>
+	<div><%= link_to 'Edit', order_edit_path(o) %></div>
+  <div><%= link_to 'Destroy', o, method: :delete, data: { confirm: 'Are you sure?' } %></div>
+
+<% end %>
+
+<br>
+
+<%= link_to 'Create a new order!', orders_new_path %>

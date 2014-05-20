@@ -1,0 +1,19 @@
+// Place all the styles related to the kids controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.image {
+	background:url(movie_poster.jpg) no-repeat;
+	width: 304px;
+	height: 395px;
+	float: left;
+	background-size: 100%;
+}
+
+.photo {
+	width: 304px;
+	height: 395px;
+	float: left;
+	overflow: hidden;
+}
+

@@ -1,0 +1,2 @@
+module KaratesHelper
+end

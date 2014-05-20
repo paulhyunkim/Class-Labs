@@ -1,0 +1,17 @@
+<h1>Burritos#index</h1>
+<p>Find me in app/views/burritos/index.html.erb</p>
+
+<% @burritos.each do |b| %>
+  <ul>
+    <li>
+      <%= link_to burrito_path b do %>
+        <strong><%= b.name %>'s burrito.  Don't touch!!!</strong>
+      <% end %>
+      <ul>
+        <% b.ingredients.each do |i| %>
+          <li><%= i.name %></li>
+        <% end %>
+      </ul>
+    </li>
+  </ul>
+<% end %>

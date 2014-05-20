@@ -1,0 +1,34 @@
+* {
+	background-color: black;
+	margin: 0 auto;
+	text-align: center;
+	color: yellow;	
+	font-family: "Book Antiqua";
+}
+
+h1,h2,h3,h4,h5,h6 {
+	font-family: "Book Antiqua";
+}
+
+.harry {
+	background-image: url('HPCharacterSprite.jpg');
+	height: 100px;
+	width: 100px;
+	border-radius: 50%;
+}
+
+.ron {
+	background-image: url('HPCharacterSprite.jpg');
+	height: 100px;
+	width: 100px;
+	border-radius: 50%;
+	background-position: 0 -100px;
+}
+
+.hermoine {
+	background-image: url('HPCharacterSprite.jpg');
+	height: 100px;
+	width: 100px;
+	border-radius: 50%;
+	background-position: 0 -200px;
+}

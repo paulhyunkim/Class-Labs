@@ -1,0 +1,2 @@
+module HogwartsHelper
+end

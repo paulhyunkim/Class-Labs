@@ -1,0 +1,8 @@
+<h1>Here there be DRAGONS</h1>
+
+<% @dragons.each do |d| %>
+	<h2><%= d.name %></h2> <%= link_to "Learn about this dragon.", dragon_path(d) %>
+<% end %>
+
+<hr>
+<%= link_to "Hatch a new dragon!", new_dragon_path %>

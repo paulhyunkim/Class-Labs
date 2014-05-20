@@ -1,0 +1,12 @@
+<h1> <%= @dragon.name %> </h1>
+
+<p><%= @dragon.name %> is a <%= @dragon.size %> <%= @dragon.color %> dragon who is <%= @dragon.age %> years old.</p>
+<% if @dragon.is_firebreathing == true %>
+<p>This dragon is dangerous and breathes fire.</p>
+<% end %>
+
+<% if @dragon.user == current_user %>
+<p>This is my dragon!</p>
+<% end %>
+
+<%= link_to "Kill this dragon", dragon_path, method: "delete" %>
